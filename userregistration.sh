@@ -8,3 +8,10 @@ then
 else
 	echo "Invalid"
 fi
+read -p "Enter a Last Name: " lastName
+if [[ $lastName =~ $pattern ]]
+then
+	echo "Valid"
+else
+	echo "Invalid"
+fi
