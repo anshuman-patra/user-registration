@@ -37,7 +37,13 @@ fi
 read -p "enter valid password in 8 minimum " password
 if [[ ${#password} -ge 8 ]]
 then
-	echo "Valid"
+	echo " password is Valid  as containg 8 character"
 else
-	echo "Invalid"
+	echo "password  is Invalid  as  not containg 8 character"
+fi
+if [[ ${#password} -ge 8 && $password == *[[:upper:]]* ]]
+then
+	echo " password is Valid as  containing  one upper case character"
+else
+	echo "pasword is Invalid as not containing one upper case character"
 fi
