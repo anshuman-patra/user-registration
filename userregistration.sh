@@ -4,6 +4,7 @@ pattern="^[[:upper:]]{1}[a-zA-Z]{3,}$"
 
 pattern1="^[a-zA-Z0-9]{3,15}(|[.|_|%|+|-]?[a-zA-Z0-9]+)@[a-zA-Z0-9]{1,15}(.[a-z]{2,4})(|[.]?[a-z]{2,4})$"
 pattern2="^[0-9]{1,4}[[:space:]][0-9]{10}$"
+pattern3="^([a-zA-Z0-9@*#]{8})$"
 read -p "Enter a First Name: " firstName
 if [[ $firstName =~ $pattern ]]
 then
@@ -33,3 +34,10 @@ else
 	echo "Invalid"
 fi
 
+read -p "enter valid password in 8 minimum " password
+if [[ ${#password} -ge 8 ]]
+then
+	echo "Valid"
+else
+	echo "Invalid"
+fi
