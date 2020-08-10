@@ -47,3 +47,9 @@ then
 else
 	echo "pasword is Invalid as not containing one upper case character"
 fi
+if [[ ${#password} -ge 8 && $password == *[[:upper:]]* && $password == *[0-9]* ]]
+then
+	echo " password Valid as cointaining 1 numeric value"
+else
+	echo "password is Invalid as not containing 1 numeric value "
+fi
