@@ -35,6 +35,8 @@ else
 fi
 
 read -p "enter valid password in 8 minimum " password
+pattern4=$(($(tr -d '[[:alnum:]]' <<< $password | wc -m)-1))
+
 if [[ ${#password} -ge 8 ]]
 then
 	echo " password is Valid  as containg 8 character"
@@ -53,3 +55,11 @@ then
 else
 	echo "password is Invalid as not containing 1 numeric value "
 fi
+if [[ ${#password} -ge 8 && $password == *[[:upper:]]* && $password == *[0-9]*  &&  $pattern4 -eq 1  ]]
+then
+        echo " password Valid as cointaining 1 special cahracter " 
+	echo " now password satisfying all conditions"
+else
+        echo "password is Invalid as not containing 1 special value "
+fi
+
