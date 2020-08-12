@@ -1,0 +1,51 @@
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc@yahoo.com
+Valid
+-----------------------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc-100@yahoo.com
+Valid
+---------------------------------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc.100@yahoo.com
+Valid
+
+-----------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc111@abc.com
+Valid
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc-100@abc.net
+Valid
+
+-----------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc.100@abc.com.au
+Valid
+
+-------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc@1.com
+Valid
+--------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc@gmail.com.com
+Valid
+
+---------------------------------------------------------------------------------------------------------------------------
+AMAR@DESKTOP-HTE61QS MINGW64 ~/desktop/course/pattern (master)
+$ ./email.sh
+Enter a Email : abc+100@gmail.com
+Valid
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
